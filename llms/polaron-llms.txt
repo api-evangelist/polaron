@@ -1,0 +1,33 @@
+# Polaron
+
+> Polaron is a London-based AI software company building "the intelligence layer for materials science." Its platform applies machine learning to microscopy and image data to automate microstructure analysis, connecting process, structure, and performance so materials engineering teams can characterise, design, and manufacture materials faster. Polaron is backed by Speedinvest and research institutions including Imperial College London, Manchester, Oxford, and Cambridge. No public developer API is currently published.
+
+## Platform
+
+- [Platform](https://polaron.ai/platform): AI models for materials microstructure — Segmentation (feature identification/measurement), Reconstruction (2D-to-3D), and Design (microstructural optimisation).
+- [R&D applications](https://polaron.ai/applications/r-and-d): Accelerating materials research and development workflows.
+- [Quality and Qualification](https://polaron.ai/applications/quality-and-qualification): Materials quality and qualification workflows.
+- [Modelling and Simulation](https://polaron.ai/applications/modelling-and-simulation): Materials modelling and simulation workflows.
+
+## Company
+
+- [About](https://polaron.ai/about-us): Company background, team, and mission.
+- [Newsroom](https://polaron.ai/newsroom): Company news and announcements.
+- [Careers](https://polaron.ai/careers): Open roles at Polaron.
+
+## Industries
+
+Batteries, metals and alloys, composites, ceramics, additive manufacturing, and pharmaceuticals.
+
+## Legal
+
+- [Terms of Use](https://polaron.ai/terms-of-use)
+- [Privacy Policy](https://polaron.ai/privacy-policy)
+- [Platform Terms and Conditions](https://polaron.ai/platform-terms-and-conditions)
+
+## Contact
+
+- Email: info@polaron.ai
+- LinkedIn: https://uk.linkedin.com/company/polaron-ai
+- Twitter/X: https://twitter.com/polaronAI
+- Location: Senna Building, Gorsuch Place, London E2 8JF, United Kingdom

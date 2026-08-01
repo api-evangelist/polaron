@@ -1,8 +1,30 @@
 aid: polaron
 name: Polaron
-description: Polaron is a company surfaced as a portfolio company of speedinvest and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Polaron is a London-based AI software company that builds "the intelligence layer for
+  materials science." Its platform applies machine learning to microscopy and image data to
+  automate microstructure analysis, connecting process, structure, and performance so materials
+  engineering teams can characterise, design, and manufacture materials faster and with less
+  uncertainty. The platform centers on three core model families: Segmentation (identifying and
+  measuring microstructural features), Reconstruction (converting 2D micrographs into 3D
+  representations), and Design (optimising microstructural parameters). It is applied across
+  batteries, metals and alloys, composites, ceramics, additive manufacturing, and pharmaceuticals,
+  spanning R&D, quality and qualification, and modelling and simulation workflows. Polaron is
+  backed by Speedinvest and research institutions including Imperial College London, Manchester,
+  Oxford, and Cambridge.
 url: https://raw.githubusercontent.com/api-evangelist/polaron/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/66dacfc633b8a155263481fd/69813922f2dab1f63b99d94c_Frame%201707484013.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,12 +33,47 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Materials Science
+- Artificial Intelligence
+- Machine Learning
+- Microscopy
+- Microstructure
+- Batteries
+- Additive Manufacturing
+- Deep Tech
+- Simulation
 apis: []
+common:
+- type: Website
+  url: https://polaron.ai
+- type: Platform
+  url: https://polaron.ai/platform
+- type: About
+  url: https://polaron.ai/about-us
+- type: Blog
+  url: https://polaron.ai/newsroom
+- type: GitHubOrganization
+  url: https://github.com/Polaron-AI
+- type: TermsOfService
+  url: https://polaron.ai/terms-of-use
+- type: PrivacyPolicy
+  url: https://polaron.ai/privacy-policy
+- type: Support
+  url: mailto:info@polaron.ai
+- type: DomainSecurity
+  url: security/polaron-domain-security.yml
+- type: LLMsTxt
+  url: llms/polaron-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
