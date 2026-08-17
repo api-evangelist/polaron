@@ -1,0 +1,112 @@
+generated: '2026-08-17'
+method: probed
+source: live HTTP probes of every Polaron host named in apis.yml plus the platform app host
+note: >-
+  Every /.well-known/ path 404s on the marketing hosts (polaron.ai and www.polaron.ai return an
+  "Invalid .well-known request" page from Webflow). The platform app host app.polaron.ai answers
+  HTTP 200 to EVERY /.well-known/ path with the same 380-byte Vite SPA shell (identical bytes to
+  the site root), which is an SPA catch-all, not a served document — recorded as a miss. No
+  WellKnown or SecurityTxt pointer is emitted in apis.yml because no path returned a real
+  document.
+hosts:
+- host: polaron.ai
+  platform: Webflow
+  paths:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: www.polaron.ai
+  platform: Webflow
+  paths:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: app.polaron.ai
+  platform: AWS App Runner (Vite SPA)
+  spa_catch_all: true
+  paths:
+  - path: /.well-known/security.txt
+    status: 200
+    document: false
+    file: null
+    note: 380-byte SPA shell, identical to GET / — not a document
+  - path: /.well-known/openid-configuration
+    status: 200
+    document: false
+    file: null
+    note: 380-byte SPA shell — not a document
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    document: false
+    file: null
+    note: 380-byte SPA shell — not a document
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    document: false
+    file: null
+    note: 380-byte SPA shell — not a document
+  - path: /.well-known/api-catalog
+    status: 200
+    document: false
+    file: null
+    note: 380-byte SPA shell — not a document
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    document: false
+    file: null
+    note: 380-byte SPA shell — not a document
+  - path: /.well-known/agent-card.json
+    status: 200
+    document: false
+    file: null
+    note: 380-byte SPA shell — not a document
+  - path: /api/.well-known/oauth-protected-resource
+    status: 401
+    document: false
+    file: null
+    note: 'blanket {"detail":"Unauthorized"} from the gated app backend'
+summary:
+  documents_found: 0
+  security_txt: false
+  openid_configuration: false
+  oauth_authorization_server: false
+  api_catalog: false
+  ai_plugin: false
+  agent_card: false
+checked: '2026-08-17'

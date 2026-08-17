@@ -1,0 +1,26 @@
+generated: '2026-08-17'
+method: searched
+source: https://www.polaron.ai/sitemap.xml
+docs: https://www.polaron.ai/platform-terms-and-conditions
+plan_count: 0
+note: >-
+  Polaron publishes no pricing or plans page. The sitemap enumerates 22 URLs and contains no
+  /pricing, /plans or /developers path; a direct probe of https://www.polaron.ai/pricing returns
+  404. Commercial terms are handled per-customer: the Polaron Platform Agreement states that fees,
+  the Initial Subscription Term, Renewal Periods and the "Maximum Usage" cap are all defined in an
+  individual Quotation rather than in any published tier. Access is a sales-led subscription or
+  pilot, with an academic-partnership track advertised separately. This is an honest zero, not an
+  unchecked field.
+pricing_model: sales-led-quotation
+publicly_listed_prices: false
+free_tier: false
+trial: unknown
+plans: []
+evidence:
+- url: https://www.polaron.ai/pricing
+  status: 404
+- url: https://www.polaron.ai/sitemap.xml
+  status: 200
+- url: https://www.polaron.ai/platform-terms-and-conditions
+  status: 200
+checked: '2026-08-17'

@@ -1,0 +1,24 @@
+generated: '2026-08-17'
+method: searched
+source: https://www.polaron.ai/platform-terms-and-conditions
+limit_count: 0
+note: >-
+  Polaron publishes no developer documentation, so no rate limits, quota windows or response
+  headers are documented anywhere public. The only usage constraint the company states publicly is
+  contractual, not runtime: the Polaron Platform Agreement obliges the customer not to "exceed the
+  Maximum Usage at any time", with Maximum Usage defined per-customer in the Quotation. The
+  platform backend at https://app.polaron.ai/api/ answers every path with a blanket HTTP 401
+  {"detail":"Unauthorized"} and emits no RateLimit-*, X-RateLimit-* or Retry-After headers on an
+  unauthenticated response, so nothing could be observed live either. Honest zero.
+limits: []
+headers_observed: []
+contractual_limit:
+  term: Maximum Usage
+  source: https://www.polaron.ai/platform-terms-and-conditions
+  value: per-customer, defined in the Quotation — not published
+evidence:
+- url: https://app.polaron.ai/api/
+  status: 401
+- url: https://www.polaron.ai/platform-terms-and-conditions
+  status: 200
+checked: '2026-08-17'

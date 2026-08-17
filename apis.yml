@@ -33,7 +33,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-08-17'
 tags:
 - Company
 - Materials Science
@@ -63,17 +63,44 @@ common:
   url: https://polaron.ai/privacy-policy
 - type: Support
   url: mailto:info@polaron.ai
+- type: Login
+  url: https://app.polaron.ai
 - type: DomainSecurity
   url: security/polaron-domain-security.yml
 - type: LLMsTxt
   url: llms/polaron-llms.txt
+- type: Plans
+  url: plans/polaron-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/polaron-rate-limits.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 x-enrichment:
-  date: '2026-07-20'
+  date: '2026-08-17'
   status: minimal
-  artifacts_added: 1
+  artifacts_added: 3
   pass: local-v1
+x-coverage:
+  state: gated
+  reason: customer-only-docs
+  detail: >-
+    Polaron ships no developer surface at all on its marketing site — the 22-URL sitemap has no
+    /developers, /docs or /pricing entry — and the product's own backend at
+    https://app.polaron.ai/api/ answers every path, including /api/openapi.json and /api/docs,
+    with a blanket HTTP 401 {"detail":"Unauthorized"}, so the contract is reachable only with an
+    active tenant account.
+  evidence:
+  - url: https://app.polaron.ai/api/openapi.json
+    status: 401
+  - url: https://app.polaron.ai/api/docs
+    status: 401
+  - url: https://www.polaron.ai/pricing
+    status: 404
+  - url: https://polaron.ai/.well-known/security.txt
+    status: 404
+  - url: https://api.github.com/orgs/Polaron-AI
+    status: 200
+  checked: '2026-08-17'

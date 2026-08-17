@@ -1,19 +1,31 @@
 # Polaron
 
-> Polaron is a London-based AI software company building "the intelligence layer for materials science." Its platform applies machine learning to microscopy and image data to automate microstructure analysis, connecting process, structure, and performance so materials engineering teams can characterise, design, and manufacture materials faster. Polaron is backed by Speedinvest and research institutions including Imperial College London, Manchester, Oxford, and Cambridge. No public developer API is currently published.
+> Polaron is a London-based AI software company building "the intelligence layer for materials science." Its platform applies machine learning to microscopy and image data to automate microstructure analysis, connecting process, structure, and performance so materials engineering teams can characterise, design, and manufacture materials faster. Founded in 2023 as an Imperial College London spin-out, Polaron is backed by Speedinvest and research institutions including Imperial College London, Manchester, Oxford, and Cambridge. No public developer API, SDK, or developer documentation is published — the product is delivered as an authenticated web application.
 
 ## Platform
 
-- [Platform](https://polaron.ai/platform): AI models for materials microstructure — Segmentation (feature identification/measurement), Reconstruction (2D-to-3D), and Design (microstructural optimisation).
-- [R&D applications](https://polaron.ai/applications/r-and-d): Accelerating materials research and development workflows.
-- [Quality and Qualification](https://polaron.ai/applications/quality-and-qualification): Materials quality and qualification workflows.
-- [Modelling and Simulation](https://polaron.ai/applications/modelling-and-simulation): Materials modelling and simulation workflows.
+- [Platform](https://www.polaron.ai/platform): AI models for materials microstructure — Segmentation (feature identification/measurement), Reconstruction (2D-to-3D), and Design (microstructural optimisation). Models are trained bespoke per customer on small datasets rather than as a centralised foundation model, and are "trained and evaluated easily through the Polaron platform."
+- [R&D applications](https://www.polaron.ai/applications/r-and-d): Accelerating materials research and development workflows.
+- [Quality and Qualification](https://www.polaron.ai/applications/quality-and-qualification): Materials quality and qualification workflows.
+- [Modelling and Simulation](https://www.polaron.ai/applications/modelling-and-simulation): Materials modelling and simulation workflows.
+
+## Access
+
+- [Polaron platform application](https://app.polaron.ai): The product itself, a single-page web application. Sign-in required; there is no public sign-up page.
+- No developer portal, API reference, OpenAPI/AsyncAPI/GraphQL contract, SDK, CLI, MCP server, or agent card is published on any Polaron host. The application's own backend (`https://app.polaron.ai/api/`) answers every path with HTTP 401 `{"detail":"Unauthorized"}` — it is the app's private backend, not a documented product API.
+- No published pricing. Commercial terms (fees, subscription term, "Maximum Usage" cap) are set per-customer in a Quotation under the Platform Agreement. An academic-partnership track is offered separately.
 
 ## Company
 
-- [About](https://polaron.ai/about-us): Company background, team, and mission.
-- [Newsroom](https://polaron.ai/newsroom): Company news and announcements.
-- [Careers](https://polaron.ai/careers): Open roles at Polaron.
+- [About](https://www.polaron.ai/about-us): Company background, team, and mission. Founded 2023 by Isaac Squires (CEO), Steve Kench (CTO), and Sam Cooper (Chief Scientist).
+- [Newsroom](https://www.polaron.ai/newsroom): Company news and announcements.
+- [Academic Partnerships](https://www.polaron.ai/academic-partnerships): Programme for university research groups.
+- [Careers](https://www.polaron.ai/careers): Open roles at Polaron.
+- [GitHub organization](https://github.com/Polaron-AI): Created 2023-09-29, zero public repositories.
+
+## Case studies
+
+- [WMG LMFP](https://www.polaron.ai/case-studies/wmg-lmfp): Microstructure quantification work with WMG on LMFP cathode material.
 
 ## Industries
 
@@ -21,9 +33,9 @@ Batteries, metals and alloys, composites, ceramics, additive manufacturing, and 
 
 ## Legal
 
-- [Terms of Use](https://polaron.ai/terms-of-use)
-- [Privacy Policy](https://polaron.ai/privacy-policy)
-- [Platform Terms and Conditions](https://polaron.ai/platform-terms-and-conditions)
+- [Terms of Use](https://www.polaron.ai/terms-of-use)
+- [Privacy Policy](https://www.polaron.ai/privacy-policy)
+- [Platform Terms and Conditions](https://www.polaron.ai/platform-terms-and-conditions)
 
 ## Contact
 
