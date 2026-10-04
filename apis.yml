@@ -49,7 +49,7 @@ tags:
 - Company
 - Materials Science
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - Microscopy
 - Microstructure
 - Batteries
@@ -67,6 +67,7 @@ tags_raw:
 - Additive Manufacturing
 - Deep Tech
 - Simulation
+- Machine-Learning
 apis: []
 common:
 - type: Website
